@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VY5-pF-CDg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OvQ-nT-e26">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -25,6 +25,22 @@
             </objects>
             <point key="canvasLocation" x="1796" y="36"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SEv-mt-c8z">
+            <objects>
+                <navigationController id="OvQ-nT-e26" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BxK-KO-olO">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VY5-pF-CDg" kind="relationship" relationship="rootViewController" id="ow8-8x-45u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gec-Vt-KB7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="36"/>
+        </scene>
         <!--Phone Sign In View Controller-->
         <scene sceneID="6XB-Zh-N19">
             <objects>
@@ -32,9 +48,33 @@
                     <view key="view" contentMode="scaleToFill" id="eiN-GV-9Pz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8DT-4X-A9X">
+                                <rect key="frame" x="150" y="318" width="74" height="30"/>
+                                <state key="normal" title="See a tree!"/>
+                                <connections>
+                                    <action selector="didTapTreeButton:" destination="VY5-pF-CDg" eventType="touchUpInside" id="wop-bh-mbG"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8DT-4X-A9X" firstAttribute="centerX" secondItem="eiN-GV-9Pz" secondAttribute="centerX" id="hPD-1e-TYp"/>
+                            <constraint firstItem="8DT-4X-A9X" firstAttribute="centerY" secondItem="eiN-GV-9Pz" secondAttribute="centerY" id="vz5-Rr-FJG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="vbU-Rf-5kq"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SlS-us-3P3">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="OBX-kP-o83">
+                            <connections>
+                                <action selector="didTapLogInOut:" destination="VY5-pF-CDg" id="Jbw-Vf-cYa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="logInOutButton" destination="OBX-kP-o83" id="g5z-l9-VZS"/>
+                        <outlet property="treeButton" destination="8DT-4X-A9X" id="99M-kB-6cY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJh-c0-XCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

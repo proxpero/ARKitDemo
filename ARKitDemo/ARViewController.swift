@@ -13,7 +13,8 @@ import ARKit
 class ARViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
-    
+    var treeNode: SCNNode?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,12 +25,35 @@ class ARViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
+        let scene = SCNScene(named: "art.scnassets/tree.dae")!
+
+        treeNode = scene.rootNode.childNode(withName: "tree", recursively: true)
+        treeNode?.isHidden = true
+
         // Set the scene to the view
         sceneView.scene = scene
     }
-    
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+
+        guard let touch = touches.first else { return }
+
+        let results = sceneView.hitTest(touch.location(in: sceneView), types: [ARHitTestResult.ResultType.featurePoint])
+
+        guard let hitFeature = results.last else { return }
+
+        let hitTransform = SCNMatrix4(hitFeature.worldTransform)
+
+        let hitPosition = SCNVector3Make(hitTransform.m41,
+
+                                         hitTransform.m42,
+
+                                         hitTransform.m43)
+
+        treeNode?.position = hitPosition
+        treeNode?.isHidden = false
+    }
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
