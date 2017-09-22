@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A3EC4A1CCE62842E6ED48CA /* Pods_ARKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 433011C3321AF6A4208B1B1B /* Pods_ARKitDemo.framework */; };
 		527A22DB1F74A32100198C3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A22DA1F74A32100198C3C /* AppDelegate.swift */; };
 		527A22DD1F74A32100198C3C /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 527A22DC1F74A32100198C3C /* art.scnassets */; };
-		527A22DF1F74A32100198C3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A22DE1F74A32100198C3C /* ViewController.swift */; };
+		527A22DF1F74A32100198C3C /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A22DE1F74A32100198C3C /* ARViewController.swift */; };
 		527A22E21F74A32100198C3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527A22E01F74A32100198C3C /* Main.storyboard */; };
 		527A22E41F74A32100198C3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527A22E31F74A32100198C3C /* Assets.xcassets */; };
 		527A22E71F74A32100198C3C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527A22E51F74A32100198C3C /* LaunchScreen.storyboard */; };
 		527A22F21F74A32200198C3C /* ARKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A22F11F74A32200198C3C /* ARKitDemoTests.swift */; };
+		527A232F1F74D8F900198C3C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 527A22FC1F74A46E00198C3C /* GoogleService-Info.plist */; };
+		527A23781F757A1D00198C3C /* PhoneSignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527A23771F757A1D00198C3C /* PhoneSignInViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,10 +30,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		433011C3321AF6A4208B1B1B /* Pods_ARKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		527A22D71F74A32100198C3C /* ARKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		527A22DA1F74A32100198C3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		527A22DC1F74A32100198C3C /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		527A22DE1F74A32100198C3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		527A22DE1F74A32100198C3C /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		527A22E11F74A32100198C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		527A22E31F74A32100198C3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		527A22E61F74A32100198C3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +42,12 @@
 		527A22ED1F74A32100198C3C /* ARKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		527A22F11F74A32200198C3C /* ARKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitDemoTests.swift; sourceTree = "<group>"; };
 		527A22F31F74A32200198C3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527A22FC1F74A46E00198C3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		527A22FD1F74A5A500198C3C /* ARKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ARKitDemo.entitlements; sourceTree = "<group>"; };
+		527A23771F757A1D00198C3C /* PhoneSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSignInViewController.swift; sourceTree = "<group>"; };
+		712364417096C60133C98AE4 /* Pods-ARKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		81D29D7EA3133468CFEC8BB4 /* Pods-ARKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C795A3C1F69BCB1704CB3E01 /* Pods_ARKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A3EC4A1CCE62842E6ED48CA /* Pods_ARKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +75,8 @@
 				527A22D91F74A32100198C3C /* ARKitDemo */,
 				527A22F01F74A32200198C3C /* ARKitDemoTests */,
 				527A22D81F74A32100198C3C /* Products */,
+				CADC5629EF535250A6CAE034 /* Frameworks */,
+				F04E9C98C0EA56EF1775DAEE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +92,16 @@
 		527A22D91F74A32100198C3C /* ARKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				527A22FD1F74A5A500198C3C /* ARKitDemo.entitlements */,
 				527A22DA1F74A32100198C3C /* AppDelegate.swift */,
 				527A22DC1F74A32100198C3C /* art.scnassets */,
-				527A22DE1F74A32100198C3C /* ViewController.swift */,
+				527A22DE1F74A32100198C3C /* ARViewController.swift */,
+				527A23771F757A1D00198C3C /* PhoneSignInViewController.swift */,
 				527A22E01F74A32100198C3C /* Main.storyboard */,
 				527A22E31F74A32100198C3C /* Assets.xcassets */,
 				527A22E51F74A32100198C3C /* LaunchScreen.storyboard */,
 				527A22E81F74A32100198C3C /* Info.plist */,
+				527A22FC1F74A46E00198C3C /* GoogleService-Info.plist */,
 			);
 			path = ARKitDemo;
 			sourceTree = "<group>";
@@ -99,6 +115,24 @@
 			path = ARKitDemoTests;
 			sourceTree = "<group>";
 		};
+		CADC5629EF535250A6CAE034 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				433011C3321AF6A4208B1B1B /* Pods_ARKitDemo.framework */,
+				C795A3C1F69BCB1704CB3E01 /* Pods_ARKitDemoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F04E9C98C0EA56EF1775DAEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81D29D7EA3133468CFEC8BB4 /* Pods-ARKitDemo.debug.xcconfig */,
+				712364417096C60133C98AE4 /* Pods-ARKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +140,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 527A22F61F74A32200198C3C /* Build configuration list for PBXNativeTarget "ARKitDemo" */;
 			buildPhases = (
+				94E2D7A0666EFA964E638BE0 /* [CP] Check Pods Manifest.lock */,
 				527A22D31F74A32100198C3C /* Sources */,
 				527A22D41F74A32100198C3C /* Frameworks */,
 				527A22D51F74A32100198C3C /* Resources */,
+				AF4839874A36B9F43AB43672 /* [CP] Embed Pods Frameworks */,
+				493E893154DC3A56CE225BFA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -150,6 +187,14 @@
 					527A22D61F74A32100198C3C = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					527A22EC1F74A32100198C3C = {
 						CreatedOnToolsVersion = 9.0;
@@ -184,6 +229,7 @@
 			files = (
 				527A22DD1F74A32100198C3C /* art.scnassets in Resources */,
 				527A22E71F74A32100198C3C /* LaunchScreen.storyboard in Resources */,
+				527A232F1F74D8F900198C3C /* GoogleService-Info.plist in Resources */,
 				527A22E41F74A32100198C3C /* Assets.xcassets in Resources */,
 				527A22E21F74A32100198C3C /* Main.storyboard in Resources */,
 			);
@@ -198,13 +244,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		493E893154DC3A56CE225BFA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94E2D7A0666EFA964E638BE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AF4839874A36B9F43AB43672 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		527A22D31F74A32100198C3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				527A22DF1F74A32100198C3C /* ViewController.swift in Sources */,
+				527A22DF1F74A32100198C3C /* ARViewController.swift in Sources */,
 				527A22DB1F74A32100198C3C /* AppDelegate.swift in Sources */,
+				527A23781F757A1D00198C3C /* PhoneSignInViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,8 +450,10 @@
 		};
 		527A22F71F74A32200198C3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81D29D7EA3133468CFEC8BB4 /* Pods-ARKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ARKitDemo/ARKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55SVD8WGE3;
 				INFOPLIST_FILE = ARKitDemo/Info.plist;
@@ -370,8 +467,10 @@
 		};
 		527A22F81F74A32200198C3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 712364417096C60133C98AE4 /* Pods-ARKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ARKitDemo/ARKitDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55SVD8WGE3;
 				INFOPLIST_FILE = ARKitDemo/Info.plist;
