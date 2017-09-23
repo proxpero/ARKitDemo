@@ -24,18 +24,13 @@ class PhoneSignInViewController: UIViewController, FUIAuthDelegate {
 
     /// Private State
 
+    private var phoneProvider: FUIPhoneAuth?
     private var handle: AuthStateDidChangeListenerHandle?
 
     private var userIsLoggedIn: Bool = false {
         didSet {
-            switch userIsLoggedIn {
-            case true:
-                treeButton.isEnabled = true
-                logInOutButton.title = "Log Out"
-            case false:
-                treeButton.isEnabled = false
-                logInOutButton.title = "Log In"
-            }
+            treeButton.isEnabled = userIsLoggedIn
+            logInOutButton.title = userIsLoggedIn ? "Log Out" : "Log In"
         }
     }
 
@@ -51,13 +46,10 @@ class PhoneSignInViewController: UIViewController, FUIAuthDelegate {
         pushARVC()
     }
 
-    /// TODO: Inject AuthUI singleton into vc instead of referencing directly.
     private func login() {
-        let authUI = FUIAuth.defaultAuthUI()
-        authUI?.isSignInWithEmailHidden = true
-        let phoneProvider = FUIPhoneAuth(authUI: authUI!)
-        authUI?.delegate = self
-        authUI?.providers = [phoneProvider]
+        guard let phoneProvider = phoneProvider else {
+            return
+        }
         phoneProvider.signIn(withPresenting: self, phoneNumber: nil)
     }
 
@@ -74,6 +66,14 @@ class PhoneSignInViewController: UIViewController, FUIAuthDelegate {
         handle = Auth.auth().addStateDidChangeListener { auth, user in
             self.userIsLoggedIn = user != nil
         }
+        guard let authUI = FUIAuth.defaultAuthUI() else {
+            return
+        }
+        authUI.isSignInWithEmailHidden = true
+        authUI.delegate = self
+        let phoneProvider = FUIPhoneAuth(authUI: authUI)
+        authUI.providers = [phoneProvider]
+        self.phoneProvider = phoneProvider
     }
 
     deinit {
