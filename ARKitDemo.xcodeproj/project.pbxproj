@@ -45,6 +45,7 @@
 		527A22FC1F74A46E00198C3C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		527A22FD1F74A5A500198C3C /* ARKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ARKitDemo.entitlements; sourceTree = "<group>"; };
 		527A23771F757A1D00198C3C /* PhoneSignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSignInViewController.swift; sourceTree = "<group>"; };
+		527A239E1F75E24400198C3C /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		712364417096C60133C98AE4 /* Pods-ARKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		81D29D7EA3133468CFEC8BB4 /* Pods-ARKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ARKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ARKitDemo/Pods-ARKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		C795A3C1F69BCB1704CB3E01 /* Pods_ARKitDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ARKitDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +73,7 @@
 		527A22CE1F74A32100198C3C = {
 			isa = PBXGroup;
 			children = (
+				527A239E1F75E24400198C3C /* README.md */,
 				527A22D91F74A32100198C3C /* ARKitDemo */,
 				527A22F01F74A32200198C3C /* ARKitDemoTests */,
 				527A22D81F74A32100198C3C /* Products */,
