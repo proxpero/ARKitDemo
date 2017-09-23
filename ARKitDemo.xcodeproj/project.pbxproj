@@ -94,10 +94,10 @@
 			children = (
 				527A22FD1F74A5A500198C3C /* ARKitDemo.entitlements */,
 				527A22DA1F74A32100198C3C /* AppDelegate.swift */,
-				527A22DC1F74A32100198C3C /* art.scnassets */,
 				527A22DE1F74A32100198C3C /* ARViewController.swift */,
 				527A23771F757A1D00198C3C /* PhoneSignInViewController.swift */,
 				527A22E01F74A32100198C3C /* Main.storyboard */,
+				527A22DC1F74A32100198C3C /* art.scnassets */,
 				527A22E31F74A32100198C3C /* Assets.xcassets */,
 				527A22E51F74A32100198C3C /* LaunchScreen.storyboard */,
 				527A22E81F74A32100198C3C /* Info.plist */,
